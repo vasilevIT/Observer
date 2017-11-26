@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		84120B4F1FCB6EB600068E60 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84120B4E1FCB6EB600068E60 /* main.cpp */; };
+		84120B571FCB806200068E60 /* Duck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84120B551FCB806200068E60 /* Duck.cpp */; };
+		84120B591FCB810B00068E60 /* WeatherStation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84120B581FCB810B00068E60 /* WeatherStation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		84120B4B1FCB6EB600068E60 /* DesignPatterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPatterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		84120B4E1FCB6EB600068E60 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		84120B551FCB806200068E60 /* Duck.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Duck.cpp; sourceTree = "<group>"; };
+		84120B581FCB810B00068E60 /* WeatherStation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WeatherStation.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				84120B4E1FCB6EB600068E60 /* main.cpp */,
+				84120B551FCB806200068E60 /* Duck.cpp */,
+				84120B581FCB810B00068E60 /* WeatherStation.cpp */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -119,7 +125,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84120B571FCB806200068E60 /* Duck.cpp in Sources */,
 				84120B4F1FCB6EB600068E60 /* main.cpp in Sources */,
+				84120B591FCB810B00068E60 /* WeatherStation.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
