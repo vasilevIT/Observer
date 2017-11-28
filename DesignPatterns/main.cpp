@@ -9,6 +9,7 @@
 #include <iostream>
 #include "Duck.cpp"
 #include "WeatherStation.cpp"
+
 using namespace std;
 
 void action(Duck* duck) {
@@ -21,20 +22,23 @@ void action(Duck* duck) {
 
 int main(int argc, const char * argv[]) {
     
-    Duck* duck = new MallarDuck();
-    action(duck);
+//    Duck* duck = new MallarDuck();
+//    action(duck);
+//
+//    duck = new RedheadDuck();
+//    action(duck);
+//
+//    duck = new RubberDuck();
+//    action(duck);
+//
+//    duck = new DecoyDuck();
+//    action(duck);
+//
+//    duck->setFlyBehavior(new FlyRocketPowered());
+//    action(duck);
     
-    duck = new RedheadDuck();
-    action(duck);
-    
-    duck = new RubberDuck();
-    action(duck);
-    
-    duck = new DecoyDuck();
-    action(duck);
-    
-    duck->setFlyBehavior(new FlyRocketPowered());
-    action(duck);
+    WeatherStation* station = new WeatherStation();
+    station->run();
     
     return 0;
 }

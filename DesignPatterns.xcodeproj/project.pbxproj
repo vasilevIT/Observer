@@ -10,6 +10,13 @@
 		84120B4F1FCB6EB600068E60 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84120B4E1FCB6EB600068E60 /* main.cpp */; };
 		84120B571FCB806200068E60 /* Duck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84120B551FCB806200068E60 /* Duck.cpp */; };
 		84120B591FCB810B00068E60 /* WeatherStation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84120B581FCB810B00068E60 /* WeatherStation.cpp */; };
+		848B8CD21FCDDD0B003E4C82 /* WeatherData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 848B8CD11FCDDD0B003E4C82 /* WeatherData.cpp */; };
+		848B8CD41FCDDDA8003E4C82 /* CurrentConditionsDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 848B8CD31FCDDDA8003E4C82 /* CurrentConditionsDisplay.cpp */; };
+		848B8CD61FCDDFE3003E4C82 /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 848B8CD51FCDDFE3003E4C82 /* Observer.cpp */; };
+		848B8CD81FCDDFFA003E4C82 /* DisplayElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 848B8CD71FCDDFFA003E4C82 /* DisplayElement.cpp */; };
+		848B8CDA1FCDE00C003E4C82 /* Subject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 848B8CD91FCDE00C003E4C82 /* Subject.cpp */; };
+		848B8CDC1FCDE1E2003E4C82 /* StatisticsDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 848B8CDB1FCDE1E2003E4C82 /* StatisticsDisplay.cpp */; };
+		848B8CDE1FCDEA2B003E4C82 /* ForecastDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 848B8CDD1FCDEA2B003E4C82 /* ForecastDisplay.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +36,13 @@
 		84120B4E1FCB6EB600068E60 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		84120B551FCB806200068E60 /* Duck.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Duck.cpp; sourceTree = "<group>"; };
 		84120B581FCB810B00068E60 /* WeatherStation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WeatherStation.cpp; sourceTree = "<group>"; };
+		848B8CD11FCDDD0B003E4C82 /* WeatherData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WeatherData.cpp; sourceTree = "<group>"; };
+		848B8CD31FCDDDA8003E4C82 /* CurrentConditionsDisplay.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CurrentConditionsDisplay.cpp; sourceTree = "<group>"; };
+		848B8CD51FCDDFE3003E4C82 /* Observer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Observer.cpp; sourceTree = "<group>"; };
+		848B8CD71FCDDFFA003E4C82 /* DisplayElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DisplayElement.cpp; sourceTree = "<group>"; };
+		848B8CD91FCDE00C003E4C82 /* Subject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Subject.cpp; sourceTree = "<group>"; };
+		848B8CDB1FCDE1E2003E4C82 /* StatisticsDisplay.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StatisticsDisplay.cpp; sourceTree = "<group>"; };
+		848B8CDD1FCDEA2B003E4C82 /* ForecastDisplay.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ForecastDisplay.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,13 @@
 				84120B4E1FCB6EB600068E60 /* main.cpp */,
 				84120B551FCB806200068E60 /* Duck.cpp */,
 				84120B581FCB810B00068E60 /* WeatherStation.cpp */,
+				848B8CD11FCDDD0B003E4C82 /* WeatherData.cpp */,
+				848B8CD31FCDDDA8003E4C82 /* CurrentConditionsDisplay.cpp */,
+				848B8CD51FCDDFE3003E4C82 /* Observer.cpp */,
+				848B8CD71FCDDFFA003E4C82 /* DisplayElement.cpp */,
+				848B8CD91FCDE00C003E4C82 /* Subject.cpp */,
+				848B8CDB1FCDE1E2003E4C82 /* StatisticsDisplay.cpp */,
+				848B8CDD1FCDEA2B003E4C82 /* ForecastDisplay.cpp */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -125,9 +146,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848B8CD41FCDDDA8003E4C82 /* CurrentConditionsDisplay.cpp in Sources */,
+				848B8CD61FCDDFE3003E4C82 /* Observer.cpp in Sources */,
 				84120B571FCB806200068E60 /* Duck.cpp in Sources */,
 				84120B4F1FCB6EB600068E60 /* main.cpp in Sources */,
+				848B8CDA1FCDE00C003E4C82 /* Subject.cpp in Sources */,
+				848B8CDC1FCDE1E2003E4C82 /* StatisticsDisplay.cpp in Sources */,
+				848B8CD21FCDDD0B003E4C82 /* WeatherData.cpp in Sources */,
 				84120B591FCB810B00068E60 /* WeatherStation.cpp in Sources */,
+				848B8CD81FCDDFFA003E4C82 /* DisplayElement.cpp in Sources */,
+				848B8CDE1FCDEA2B003E4C82 /* ForecastDisplay.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

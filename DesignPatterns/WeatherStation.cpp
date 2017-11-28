@@ -8,66 +8,35 @@
 
 #include <iostream>
 #include <vector>
+#include "WeatherData.cpp"
+#include "CurrentConditionsDisplay.cpp"
+#include "StatisticsDisplay.cpp"
+#include "ForecastDisplay.cpp"
+#include "Subject.cpp"
+#include "Observer.cpp"
 using namespace std;
 
-class Observer {
+#pragma once
+class WeatherStation {
 public:
-    void update(double temperature, double humidity, double pressure) {
+    WeatherStation() {
+        ;
+    }
+    
+    void run() {
+        cout << "Станция запущена..." << endl;
+        WeatherData* weatherData = new WeatherData();
+        CurrentConditionsDisplay* currentDisplay = new CurrentConditionsDisplay(weatherData);
+        StatisticsDisplay* statDisplay = new StatisticsDisplay(weatherData);
+        ForecastDisplay* forecastDisplay = new ForecastDisplay(weatherData);
+        
+        weatherData->setMeasurements(-5, 80, 450);
+        cout << endl;
+        weatherData->setMeasurements(10, 85, 450);
+        cout << endl;
+        weatherData->setMeasurements(22, 80, 450);
+        cout << endl;
         
     }
 };
 
-class DisplayElement{
-    
-};
-
-class Subject {
-public:
-    virtual void registerObserver(Observer o) = 0;
-    virtual void removeObserver(Observer o) = 0;
-    virtual void notifyObserver() = 0;
-};
-
-// Погодные данные
-class WeatherData : public Subject {
-private:
-    vector<Observer> observers;
-    double temperature, humidity, pressure;
-    
-public:
-    
-    WeatherData() {
-        this->temperature = 0;
-        this->humidity = 0;
-        this->pressure = 0;
-    }
-    
-    double getTemperature() {
-        return this->temperature;
-    }
-    
-    double getHumidity() {
-        return this->humidity;
-    }
-    
-    double getPressure() {
-        return this->pressure;
-    }
-    
-    void measurementsChanged() {
-        ;
-    }
-    
-    void registerObserver(Observer o){
-        this->observers.push_back(o);
-    }
-    
-    void removeObserver(Observer o) {
-        for (int i = 0; i < this->observers.size(); i++) {
-            if (false) { //o == this->observers.size()) {
-                // TODO неправильная реализация - изменить
-                this->observers.pop_back();
-            }
-        }
-    }
-};
