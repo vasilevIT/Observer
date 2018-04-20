@@ -9,7 +9,6 @@
 #pragma once
 
 #include <iostream>
-#include "CurrentConditionsDisplay.cpp"
 #include "Subject.cpp"
 
 using namespace std;
