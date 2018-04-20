@@ -12,30 +12,8 @@
 
 using namespace std;
 
-void action(Duck* duck) {
-    duck->performQuack();
-    duck->swim();
-    duck->display();
-    duck->performFly();
-    cout << endl;
-}
 
 int main(int argc, const char * argv[]) {
-    
-//    Duck* duck = new MallarDuck();
-//    action(duck);
-//
-//    duck = new RedheadDuck();
-//    action(duck);
-//
-//    duck = new RubberDuck();
-//    action(duck);
-//
-//    duck = new DecoyDuck();
-//    action(duck);
-//
-//    duck->setFlyBehavior(new FlyRocketPowered());
-//    action(duck);
     
     WeatherStation* station = new WeatherStation();
     station->run();

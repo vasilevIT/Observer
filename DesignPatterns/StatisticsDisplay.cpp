@@ -9,16 +9,17 @@
 #include <iostream>
 #include "Observer.cpp"
 #include "DisplayElement.cpp"
+#include "WeatherData.cpp"
 using namespace std;
 
 
 class StatisticsDisplay : public Observer, DisplayElement {
 private:
     double temp, hum, press;
-    Object* weatherData;
+    WeatherData* weatherData;
     
 public:
-    StatisticsDisplay(Object* s) {
+    StatisticsDisplay(WeatherData* s) {
         this->weatherData = s;
         this->weatherData->registerObserver(this);
         this->temp = 0;

@@ -9,15 +9,16 @@
 #include <iostream>
 #include "Observer.cpp"
 #include "DisplayElement.cpp"
+#include "WeatherData.cpp"
 using namespace std;
 #pragma once
 
 class ForecastDisplay : public Observer, DisplayElement {
 private:
     double press;
-    Object* weatherData;
+    WeatherData* weatherData;
 public:
-    ForecastDisplay(Object* s){
+    ForecastDisplay(WeatherData* s){
         this->weatherData = s;
         this->weatherData->registerObserver(this);
         this->press = 0;
