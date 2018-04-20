@@ -10,16 +10,15 @@
 #include <iostream>
 #include "Observer.cpp"
 #include "DisplayElement.cpp"
-#include "Subject.cpp"
 using namespace std;
 
 class CurrentConditionsDisplay : public Observer, DisplayElement {
 private:
     double temp, hum, press;
-    Subject* weatherData;
+    Object* weatherData;
     
 public:
-    CurrentConditionsDisplay(Subject* s) {
+    CurrentConditionsDisplay(Object* s) {
         this->weatherData = s;
         this->weatherData->registerObserver(this);
         this->temp = 0;
@@ -27,7 +26,7 @@ public:
         this->press = 0;
     }
     
-    void update(Subject* s,double temperature, double humidity, double pressure){
+    void update(Object* s,double temperature, double humidity, double pressure){
         this->temp = temperature;
         this->hum = humidity;
         this->press = pressure;

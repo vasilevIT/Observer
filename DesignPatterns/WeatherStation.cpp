@@ -12,7 +12,6 @@
 #include "CurrentConditionsDisplay.cpp"
 #include "StatisticsDisplay.cpp"
 #include "ForecastDisplay.cpp"
-#include "Subject.cpp"
 #include "Observer.cpp"
 using namespace std;
 

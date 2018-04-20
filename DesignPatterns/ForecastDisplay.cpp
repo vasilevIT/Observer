@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include "Observer.cpp"
-#include "Subject.cpp"
 #include "DisplayElement.cpp"
 using namespace std;
 #pragma once
@@ -16,15 +15,15 @@ using namespace std;
 class ForecastDisplay : public Observer, DisplayElement {
 private:
     double press;
-    Subject* weatherData;
+    Object* weatherData;
 public:
-    ForecastDisplay(Subject* s){
+    ForecastDisplay(Object* s){
         this->weatherData = s;
         this->weatherData->registerObserver(this);
         this->press = 0;
     }
     
-    void update(Subject* s,double temperature, double humidity, double pressure) {
+    void update(Object* s,double temperature, double humidity, double pressure) {
         this->press = pressure;
         this->display();
     }
